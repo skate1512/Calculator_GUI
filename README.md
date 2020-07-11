@@ -8,10 +8,18 @@ Python's pillow library.
 Use:  
 ``` pip install pillow```  
 
+<p align="center">
+  <img text="Help" src="Help with Calc.PNG">
+</p>  
+  
+<p align="center">
+  <img text="Student's Calculator" src="Student's Calculator.PNG">
+</p>  
 
-![Student's Calculator](Student's Calculator.PNG)
-![Scientific Calculator](Scientific Calculator.PNG)
-![Help][Help with Calc.PNG]
+<p align="center">
+  <img text="Scientific Calculator" src="Scientific Calculator.PNG">
+</p>
+
 
 
 
