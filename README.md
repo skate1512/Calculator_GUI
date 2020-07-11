@@ -6,7 +6,12 @@ Calculator made using Python's Tkinter Library. It has 2 modes: Student and Scie
 Python 3  
 Python's pillow library.  
 Use:  
-``` pip install pillow```
+``` pip install pillow```  
+
+
+![Student's Calculator](Student's Calculator.PNG)
+![Scientific Calculator](Scientific Calculator.PNG)
+![Help][Help with Calc.PNG]
 
 
 
