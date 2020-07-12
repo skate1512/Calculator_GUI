@@ -177,7 +177,7 @@ def paste():
 
 # Implementation of 10^n Button
 def button_10power():
-    power = 10 ** int(e.get())
+    power = 10 ** int(float(e.get()))
     e.delete(0, END)
     e.insert(0, power)
 
@@ -206,12 +206,11 @@ def button_ceil():
 
 # Implementation of Factorial Function
 def button_factorial():
-    try:
-        if "." not in e.get() and int(e.get()) > 0:
+    if "." not in e.get() and int(e.get()) > 0:
             fact = math.factorial(int(e.get()))
             e.delete(0, END)
             e.insert(0, fact)
-    except:
+    else:
         e.delete(0, END)
         e.insert(0, "Error! Press Clear")
 
