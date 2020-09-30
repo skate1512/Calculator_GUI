@@ -141,16 +141,6 @@ def button_mod():
     e.insert(0, mod)
 
 
-"""
-# Implementation of ^ Button
-def button_power():
-    x = e.get().split('^')
-    sol = x[0] ** x[1]
-    e.delete(0, END)
-    e.insert(0, sol)
-"""
-
-
 # Implementation of Cut option in Edit Menu
 def cut():
     global e_cut
@@ -359,12 +349,6 @@ def scientific():
     root.geometry("950x535")
 
 
-# def programmer():
-#     root.resizable(width=False, height=False)
-#     root.iconbitmap('1.5.ico')
-#     root.geometry("480x555")
-
-
 # Defining root window
 root = Tk()
 root.title("Student's Calculator")
@@ -385,7 +369,6 @@ type_menu = Menu(menu_bar, tearoff = 0)
 menu_bar.add_cascade(label = "Type", menu = type_menu)
 type_menu.add_command(label = "Standard", command = standard)
 type_menu.add_command(label = "Scientific", command = scientific)
-# type_menu.add_command(label="Programmer", command=programmer)
 
 type_menu.add_separator()
 type_menu.add_command(label = "Exit", command = press_exit)
@@ -408,16 +391,6 @@ root.configure(menu = menu_bar)
 e = Entry(root, font = ('arial', 20, 'bold'), width = 30, bd = 10, justify = LEFT)
 e.focus()
 e.grid(row = 0, column = 0, columnspan = 4, padx = 6, pady = 5)
-
-# number_pad = "789456123"
-# i = 0
-# btn = []
-# for j in range(2, 5):
-#     for k in range(3):
-#         input = str(i)
-#         btn.append(Button(root, width=6, height=2, font=('arial', 20, 'bold'), bd=4, text=number_pad[i], command=lambda:button_click(input)))
-#         btn[i].grid(row=j, column=k, pady=1)
-#         i += 1
 
 
 button_1 = Button(root, width = 6, height = 2, font = ('arial', 20, 'bold'), bd = 4, text = '1',
